@@ -24,3 +24,11 @@ proguard/
 
 # Log Files
 *.log
+CordovaLib
+ant-build/
+ant-gen/
+assets/
+cordova/
+platform_www/
+res/
+src/
