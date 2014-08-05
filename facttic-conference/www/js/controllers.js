@@ -1,4 +1,4 @@
-angular.module('starter.controllers', [])
+angular.module('starter.controllers', ['conference.services'])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
   // Form data for the login modal
@@ -32,7 +32,14 @@ angular.module('starter.controllers', [])
     }, 1000);
   };
 })
-
+.controller('SessionsCtrl', function($scope, Session) {
+  $scope.sessions = [
+    { title: 'Software libre en el estado', id: 1 },
+    { title: 'Como armar una cooperativa de desarrollo', id: 2 },
+    { title: 'Software libre en grandes cooperativas', id: 3 },
+    { title: 'La libertad de información', id: 4 }
+  ];
+})
 .controller('PlaylistsCtrl', function($scope) {
   $scope.playlists = [
     { title: 'Reggae', id: 1 },
