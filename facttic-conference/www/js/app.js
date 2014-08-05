@@ -26,29 +26,10 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     .state('app', {
       url: "/app",
       abstract: true,
-      templateUrl: "templates/menu.html",
-      controller: 'AppCtrl'
-    })
-
-    .state('app.search', {
-      url: "/search",
-      views: {
-        'menuContent' :{
-          templateUrl: "templates/search.html"
-        }
-      }
-    })
-
-    .state('app.browse', {
-      url: "/browse",
-      views: {
-        'menuContent' :{
-          templateUrl: "templates/browse.html"
-        }
-      }
+      templateUrl: "templates/menu.html"
     })
     .state('app.sessions', {
-      url: "/playlists",
+      url: "/sessions",
       views: {
         'menuContent' :{
           templateUrl: "templates/sessions.html",
@@ -56,22 +37,39 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
-    .state('app.playlists', {
-      url: "/playlists",
+    .state('app.speakers', {
+      url: "/speakers",
       views: {
         'menuContent' :{
-          templateUrl: "templates/playlists.html",
-          controller: 'PlaylistsCtrl'
+          templateUrl: "templates/speakers.html",
+          controller: 'SpeakersCtrl'
         }
       }
     })
-
-    .state('app.single', {
-      url: "/playlists/:playlistId",
+    .state('app.speaker', {
+      url: "/speaker/:SpeakerId",
       views: {
         'menuContent' :{
-          templateUrl: "templates/playlist.html",
-          controller: 'PlaylistCtrl'
+          templateUrl: "templates/speaker.html",
+          controller: 'SpeakerCtrl'
+        }
+      }
+    })
+    .state('app.location', {
+      url: "/location",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/location.html",
+          controller: 'LocationCtrl'
+        }
+      }
+    })
+    .state('app.talk', {
+      url: "/session/:SessionId",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/talk.html",
+          controller: 'TalkCtrl'
         }
       }
     });
