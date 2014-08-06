@@ -2,10 +2,11 @@ angular.module('conference.services', [])
 .factory('ConferenceData', function() {
   var data = {
     sessions: [
-      { title: 'Software libre en el estado', id: 1, time: '10:00', speaker: 1},
-      { title: 'Como armar una cooperativa de desarrollo', id: 2, time: '11:00', speaker: 2 },
-      { title: 'Software libre en grandes cooperativas', id: 3, time: '12:00', speaker: 3 },
-      { title: 'La libertad de información', id: 4, time: '13:00', speaker: 4 }
+      { title: 'Experiencias de uso de Software Libre en Cooperativas', id: 1, time: '16:00', speaker: 1},
+      { title: 'Impulsando el Software Libre en el Estado ', id: 2, time: '17:00', speaker: 2 },
+      { title: 'Proyectos Libre y cooperativos ', id: 3, time: '18:00', speaker: 3 },
+      { title: 'Legislación y Software Libre ', id: 4, time: '19:00', speaker: 4 },
+      { title: 'Cierre con destacados miembros del movimiento cooperativo ', id: 4, time: '20:00', speaker: 5 }
     ],
     speakers: [
       {id:1, title:'charles', description: 'blah'},
@@ -14,13 +15,13 @@ angular.module('conference.services', [])
       {id:4, title:'Tomas', description: 'bloh'}
     ],
     location: {
-      latitude: 0,
-      longitude: 0,
-      address: 'Avenida Siempreviva 742, Springfield',
-      name: 'Casa de los Simpson'
+      latitude: -60.638108,
+      longitude: -32.953339,
+      address: 'San Martín 1371 Rosario, Pcia. de Santa Fe, Argentina.',
+      name: 'Instituto Movilizador de Fondos Cooperativas de la Ciudad de Rosario'
     },
     when: {
-      date: '10:00:00Z1983/08/31'
+      date: '16:00:00Z1983/08/29'
     }
   };
 
