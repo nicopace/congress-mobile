@@ -1,4 +1,4 @@
-angular.module('conference.services', ['ngResource'])
+angular.module('conference.services', [])
 .factory('ConferenceData', function() {
   var data = {
     sessions: [
