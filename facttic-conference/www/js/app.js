@@ -28,6 +28,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       abstract: true,
       templateUrl: "templates/menu.html"
     })
+    .state('app.about', {
+      url: "/about",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/about.html",
+          controller: 'AboutCtrl'
+        }
+      }
+    })
     .state('app.sessions', {
       url: "/sessions",
       views: {

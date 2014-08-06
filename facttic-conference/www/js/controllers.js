@@ -6,6 +6,8 @@ angular.module('starter.controllers', ['conference.services'])
 .controller('SpeakersCtrl', function($scope, ConferenceData) {
   $scope.speakers = ConferenceData.data().speakers;
 })
+.controller('AboutCtrl', function($scope, ConferenceData, $window) {
+})
 .controller('SpeakerCtrl', function($scope, $stateParams, ConferenceData) {
   var id = parseInt($stateParams.SpeakerId);
   var speakers = ConferenceData.data().speakers;
