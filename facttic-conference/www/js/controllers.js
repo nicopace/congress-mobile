@@ -1,4 +1,4 @@
-angular.module('starter.controllers', ['conference.services'])
+angular.module('starter.controllers', ['conference.services', 'leaflet-directive'])
 
 .controller('SessionsCtrl', function($scope, ConferenceData) {
   $scope.sessions = ConferenceData.data().sessions;
@@ -30,4 +30,19 @@ angular.module('starter.controllers', ['conference.services'])
   var data = ConferenceData.data();
   $scope.location = data.location;
   $scope.when = data.when;
+  $scope.osloCenter = {
+    lat: data.location.latitude,
+    lng: data.location.longitude,
+    zoom: 16
+  };
+  $scope.markers = {
+    osloMarker: {
+      lat: data.location.latitude,
+      lng: data.location.longitude,
+      message: data.location.name,
+      focus: true,
+      draggable: false
+    }
+
+  };
 })
