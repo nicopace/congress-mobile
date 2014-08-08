@@ -15,8 +15,8 @@ angular.module('conference.services', [])
       {id:4, title:'Tomas', description: 'bloh'}
     ],
     location: {
-      latitude: -60.638108,
-      longitude: -32.953339,
+      longitude: -60.638108,
+      latitude: -32.953339,
       address: 'San Martín 1371 Rosario, Pcia. de Santa Fe, Argentina.',
       name: 'Instituto Movilizador de Fondos Cooperativas de la Ciudad de Rosario'
     },
