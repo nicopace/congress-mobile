@@ -30,4 +30,19 @@ angular.module('starter.controllers', ['conference.services'])
   var data = ConferenceData.data();
   $scope.location = data.location;
   $scope.when = data.when;
+  $scope.osloCenter = {
+    lat: 59.91,
+    lng: 10.75,
+    zoom: 12
+  };
+  $scope.markers = {
+    osloMarker: {
+      lat: 59.91,
+      lng: 10.75,
+      message: "I want to travel here!",
+      focus: true,
+      draggable: false
+    }
+
+  };
 })
