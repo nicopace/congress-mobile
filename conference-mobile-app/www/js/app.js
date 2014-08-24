@@ -25,48 +25,72 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 
     .state('app', {
       url: "/app",
-      // abstract: true,
-      templateUrl: "templates/menu.html",
-      controller: 'AppCtrl'
+      abstract: true,
+      templateUrl: "templates/menu.html"
     })
-
-    .state('app.search', {
-      url: "/search",
+    .state('app.facttic', {
+      url: "/facttic",
       views: {
         'menuContent' :{
-          templateUrl: "templates/search.html"
+          templateUrl: "templates/facttic.html"
         }
       }
     })
-
-    .state('app.browse', {
-      url: "/browse",
+    .state('app.about', {
+      url: "/about",
       views: {
         'menuContent' :{
-          templateUrl: "templates/browse.html"
+          templateUrl: "templates/about.html",
+          controller: 'AboutCtrl'
         }
       }
     })
-    .state('app.playlists', {
-      url: "/playlists",
+    .state('app.sessions', {
+      url: "/sessions",
       views: {
         'menuContent' :{
-          templateUrl: "templates/playlists.html",
-          controller: 'PlaylistsCtrl'
+          templateUrl: "templates/sessions.html",
+          controller: 'SessionsCtrl'
         }
       }
     })
-
-    .state('app.single', {
-      url: "/playlists/:playlistId",
+    .state('app.speakers', {
+      url: "/speakers",
       views: {
         'menuContent' :{
-          templateUrl: "templates/playlist.html",
-          controller: 'PlaylistCtrl'
+          templateUrl: "templates/speakers.html",
+          controller: 'SpeakersCtrl'
+        }
+      }
+    })
+    .state('app.speaker', {
+      url: "/speaker/:SpeakerId",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/speaker.html",
+          controller: 'SpeakerCtrl'
+        }
+      }
+    })
+    .state('app.location', {
+      url: "/location",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/location.html",
+          controller: 'LocationCtrl'
+        }
+      }
+    })
+    .state('app.talk', {
+      url: "/session/:SessionId",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/talk.html",
+          controller: 'TalkCtrl'
         }
       }
     });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/app/sessions');
 });
 
