@@ -23,11 +23,13 @@ angular.module('starter.controllers', ['conference.services', 'leaflet-directive
   for(var idx in sessions) {
     if (sessions[idx].id === id) {
       $scope.session = sessions[idx];
+      $scope.session.speakerobj = [];
       var speakers = ConferenceData.data().speakers;
       for (var ids in speakers) {
-        if (speakers[ids].id == $scope.session.speaker) {
-          $scope.session.speakerobj = speakers[ids];
-          break;
+        for (var idsp in $scope.session.speaker) {
+          if (speakers[ids].id == $scope.session.speaker[idsp]) {
+            $scope.session.speakerobj.push(speakers[ids]);
+          }
         }
       };
       break;
