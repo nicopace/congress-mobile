@@ -6,7 +6,8 @@ En esta app se listan:
 
 Podés descargarla desde aqui: https://play.google.com/store/apps/details?id=com.unixono.conference.slyes2014
 
-h2. Como colaborar
+Como colaborar
+==============
 
 Para reproducir el entorno de desarrollo, lo hacés con los siguientes comandos:
 <pre>
