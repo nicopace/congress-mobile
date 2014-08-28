@@ -212,5 +212,8 @@
 /home/nicopace/tmp/congress-mobile/conference-mobile-app/platforms/android/assets/www/res/icons \
 /home/nicopace/tmp/congress-mobile/conference-mobile-app/platforms/android/assets/www/res/icons/facttic.svg \
 /home/nicopace/tmp/congress-mobile/conference-mobile-app/platforms/android/assets/www/res/icons/facttic_image_only.svg \
+/home/nicopace/tmp/congress-mobile/conference-mobile-app/platforms/android/assets/www/res/icons/facttic_destacada.svg \
+/home/nicopace/tmp/congress-mobile/conference-mobile-app/platforms/android/assets/www/res/icons/icon.png \
+/home/nicopace/tmp/congress-mobile/conference-mobile-app/platforms/android/assets/www/res/icons/imagen_destacada.png \
 /home/nicopace/tmp/congress-mobile/conference-mobile-app/platforms/android/assets/www/img/ionic.png \
 /home/nicopace/tmp/congress-mobile/conference-mobile-app/platforms/android/ant-build/AndroidManifest.xml \

@@ -7,7 +7,7 @@
 
       <div class="item item-avatar item-text-wrap">
         <h2>{{session.title}}</h2>
-        <h2><a href="#/app/speaker/{{session.speaker}}">{{session.speakerobj.title}}</a></h2>
+        <h2 ng-repeat="speaker in session.speakerobj"><a href="#/app/speaker/{{speaker.id}}">{{speaker.title}}</a></h2>
         <p>{{session.time}}</p>
       </div>
 
