@@ -25,9 +25,6 @@
         "com.ionic.keyboard": {
             "PACKAGE_NAME": "com.unixono.conference.slyes2014"
         },
-        "org.apache.cordova.console": {
-            "PACKAGE_NAME": "com.unixono.conference.slyes2014"
-        },
         "org.apache.cordova.device": {
             "PACKAGE_NAME": "com.unixono.conference.slyes2014"
         }
