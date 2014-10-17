@@ -1,13 +1,29 @@
 angular.module('conference.services', [])
 .factory('ConferenceData', function() {
   var data = {
-    sessions: [
-      { title: 'Experiencias de uso de Software Libre en Cooperativas', id: 1, time: '16:00', speaker: [1, 7], description: 'Por qué tienen una relación privilegiada y cuáles son los puntos en común. Cómo se interrelacionan en la práctica diaria y cómo se potencian.'},
-      { title: 'Impulsando el Software Libre en el Estado ', id: 2, time: '17:00', speaker: [2, 3, 4, 5], description: 'Por qué el estado tiene que usar tecnologías libres. Cuáles son los beneficios que tiene aparejado este cambio de paradigma y cuáles son los costos.'},
-      { title: 'Proyectos Libre y cooperativos ', id: 3, time: '18:00', speaker: [] },
-      { title: 'Legislación y Software Libre ', id: 4, time: '19:00', speaker: [6, 8, 9] },
-      { title: 'Cierre con destacados miembros del movimiento cooperativo ', id: 4, time: '20:00', speaker: [] }
-    ],
+    dates: {
+      '2014-10-20': [
+        { title: 'Experiencias de uso de Software Libre en Cooperativas', id: 1, time: '16:00', speaker: [1, 7], description: 'Por qué tienen una relación privilegiada y cuáles son los puntos en común. Cómo se interrelacionan en la práctica diaria y cómo se potencian.'},
+        { title: 'Impulsando el Software Libre en el Estado ', id: 2, time: '17:00', speaker: [2, 3, 4, 5], description: 'Por qué el estado tiene que usar tecnologías libres. Cuáles son los beneficios que tiene aparejado este cambio de paradigma y cuáles son los costos.'},
+        { title: 'Proyectos Libre y cooperativos ', id: 3, time: '18:00', speaker: [] },
+        { title: 'Legislación y Software Libre ', id: 4, time: '19:00', speaker: [6, 8, 9] },
+        { title: 'Cierre con destacados miembros del movimiento cooperativo ', id: 4, time: '20:00', speaker: [] }
+      ],
+      '2014-10-21': [
+        { title: 'Experiencias de uso de Software Libre en Cooperativas', id: 1, time: '16:00', speaker: [1, 7], description: 'Por qué tienen una relación privilegiada y cuáles son los puntos en común. Cómo se interrelacionan en la práctica diaria y cómo se potencian.'},
+        { title: 'Impulsando el Software Libre en el Estado ', id: 2, time: '17:00', speaker: [2, 3, 4, 5], description: 'Por qué el estado tiene que usar tecnologías libres. Cuáles son los beneficios que tiene aparejado este cambio de paradigma y cuáles son los costos.'},
+        { title: 'Proyectos Libre y cooperativos ', id: 3, time: '18:00', speaker: [] },
+        { title: 'Legislación y Software Libre ', id: 4, time: '19:00', speaker: [6, 8, 9] },
+        { title: 'Cierre con destacados miembros del movimiento cooperativo ', id: 4, time: '20:00', speaker: [] }
+      ],
+      '2014-10-22': [
+        { title: 'Experiencias de uso de Software Libre en Cooperativas', id: 1, time: '16:00', speaker: [1, 7], description: 'Por qué tienen una relación privilegiada y cuáles son los puntos en común. Cómo se interrelacionan en la práctica diaria y cómo se potencian.'},
+        { title: 'Impulsando el Software Libre en el Estado ', id: 2, time: '17:00', speaker: [2, 3, 4, 5], description: 'Por qué el estado tiene que usar tecnologías libres. Cuáles son los beneficios que tiene aparejado este cambio de paradigma y cuáles son los costos.'},
+        { title: 'Proyectos Libre y cooperativos ', id: 3, time: '18:00', speaker: [] },
+        { title: 'Legislación y Software Libre ', id: 4, time: '19:00', speaker: [6, 8, 9] },
+        { title: 'Cierre con destacados miembros del movimiento cooperativo ', id: 4, time: '20:00', speaker: [] }
+      ],
+    },
     speakers: [
       {id:1, title:'Pablo Cabello', description: 'Miembro - Itecnova - https://sites.google.com/site/itecnova/'},
       {id:2, title:'Hector Sanchez', description: 'Jefe de Desarrollo - Huayra Linux / Anses - http://huayra.conectarigualdad.gob.ar/'},
