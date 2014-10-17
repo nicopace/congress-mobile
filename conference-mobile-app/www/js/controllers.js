@@ -1,7 +1,7 @@
 angular.module('starter.controllers', ['conference.services', 'leaflet-directive'])
 
 .controller('SessionsCtrl', function($scope, ConferenceData) {
-  $scope.sessions = ConferenceData.data().sessions;
+  $scope.dates = ConferenceData.data().dates;
 })
 .controller('SpeakersCtrl', function($scope, ConferenceData) {
   $scope.speakers = ConferenceData.data().speakers;
