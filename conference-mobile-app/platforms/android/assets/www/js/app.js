@@ -28,14 +28,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       abstract: true,
       templateUrl: "templates/menu.html"
     })
-    .state('app.facttic', {
-      url: "/facttic",
-      views: {
-        'menuContent' :{
-          templateUrl: "templates/facttic.html"
-        }
-      }
-    })
     .state('app.about', {
       url: "/about",
       views: {

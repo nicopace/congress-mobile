@@ -1,7 +1,7 @@
 angular.module('starter.controllers', ['conference.services', 'leaflet-directive'])
 
 .controller('SessionsCtrl', function($scope, ConferenceData) {
-  $scope.sessions = ConferenceData.data().sessions;
+  $scope.dates = ConferenceData.data().dates;
 })
 .controller('SpeakersCtrl', function($scope, ConferenceData) {
   $scope.speakers = ConferenceData.data().speakers;
@@ -19,7 +19,15 @@ angular.module('starter.controllers', ['conference.services', 'leaflet-directive
 })
 .controller('TalkCtrl', function($scope, $stateParams, ConferenceData) {
   var id = parseInt($stateParams.SessionId);
-  var sessions = ConferenceData.data().sessions;
+  var dates = ConferenceData.data().dates;
+  var sessions = [];
+  for (var thedate in dates) {
+    for (var idx in dates[thedate]) {
+      dates[thedate][idx]['thedate'] = thedate;
+      sessions.push(dates[thedate][idx]);
+    }
+  }
+  // var sessions = ConferenceData.data().sessions;
   for(var idx in sessions) {
     if (sessions[idx].id === id) {
       $scope.session = sessions[idx];

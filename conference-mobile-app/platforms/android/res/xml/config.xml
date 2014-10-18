@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.unixono.conference.slyes2014" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.unixono.conference.scipyconar2014" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <preference name="loglevel" value="DEBUG" />
     <preference name="AndroidLaunchMode" value="singleTop" />
     <feature name="App">
@@ -12,9 +12,9 @@
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
     </feature>
-    <name>SLyE 2014</name>
+    <name>SciPyConAR 2014</name>
     <description>
-      Información sobre la conferencia Software Libre y Economía Social 2014, organizada por FACTTIC.
+      Información de la conferencia SciPyCon Argentina 2014.
     </description>
     <author email="contacto@unixono.com.ar" href="http://www.unixono.com.ar/">
         Unixono Coop. Ltda.

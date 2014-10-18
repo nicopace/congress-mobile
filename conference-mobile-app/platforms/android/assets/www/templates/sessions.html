@@ -4,9 +4,11 @@
     </ion-nav-buttons>
     <ion-content class="has-header">
         <ion-list>
+        <div ng-repeat="(date, sessions) in dates">
           <ion-item ng-repeat="session in sessions" href="#/app/session/{{session.id}}" class="item-text-wrap">
-            {{session.time}} - {{session.title}}
+          {{date}} - {{session.time}} - {{session.title}}
           </ion-item>
+        </div>
         </ion-list>
     </ion-content>
 </ion-view>

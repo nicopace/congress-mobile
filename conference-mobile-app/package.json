@@ -1,6 +1,6 @@
 {
-  "name": "ionic-project",
-  "version": "1.0.0",
+  "name": "ScipyconAR 2014 Conference app",
+  "version": "0.0.1",
   "description": "An Ionic project",
   "dependencies": {
     "gulp": "^3.5.6",
